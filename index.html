@@ -3,27 +3,27 @@
 	<head>
 		<style>
 			.tooltip {
-        text-align: center;
-        transform: translate(0, 1000%);
+        		text-align: center;
+        		transform: translate(0, 1000%);
 			}
 		</style>
 	</head>
 	<body>
-    <div class="tooltip">
-		  <input type="text" id="myInput">
+    		<div class="tooltip">
+			<input type="text" id="myInput">
 			<button onclick="myFunction()">Copy url</button>
 		</div>
 		<script>
 			function myFunction() {
-			  var copyText = document.getElementById("myInput");
-			  copyText.select();
-			  document.execCommand("copy");
-        window.close();
+				var copyText = document.getElementById("myInput");
+			  	copyText.select();
+			  	document.execCommand("copy");
+        			window.close();
 			}
-        onload=function() {
-        var url = location.href;    
-        document.getElementById("myInput").value=url.slice(url.indexOf("def"), url.length) ;
-      };
+        		onload=function() {
+        			var url = location.href;    
+        			document.getElementById("myInput").value=url.slice(url.indexOf("def"), url.length) ;
+      			};
 		</script>
 	</body>
 </html>
