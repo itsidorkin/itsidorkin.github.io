@@ -1,14 +1,18 @@
 function myFunction() {
 
-	var copyText = document.getElementById("myInput");
-	copyText.type = "text"; 
-	copyText.select();
-	document.execCommand("copy");
-	copyText.type = "hidden"; 
+	var url = new URL(location.href);    
+	var code = url.searchParams.get('code');
+	copy(code)
 	document.querySelector("#btn").innerHTML = "Code скопирован";
-	//window.close();
+	
+	//close();
 }
-onload = function() {
-	var url = location.href;    
-	document.getElementById("myInput").value = url.slice(url.indexOf("def"), url.length) ;
-};
+function copy(text) {
+    var input = document.createElement('textarea');
+    input.innerHTML = text;
+    document.body.appendChild(input);
+    input.select();
+    var result = document.execCommand('copy');
+    document.body.removeChild(input);
+    return result;
+}
