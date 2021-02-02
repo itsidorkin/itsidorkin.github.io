@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>
-			.tooltip {
-        		text-align: center;
-        		transform: translate(0, 1000%);
-			}
-		</style>
+		<link rel="stylesheet" href="src/css.css">
+		<link rel="icon" href="src/favicon.png">
+		<script src="src/js.js"></script>
+        <title>code | osu!</title>
 	</head>
-	<body>
-    		<div class="tooltip">
-			<input type="text" id="myInput">
-			<button onclick="myFunction()">Copy url</button>
+
+    <body class="osu-layout">
+        <div class="form">
+			<div class="form__dialog">
+				<div class="form__row--header ">
+					<div class="form__header--overlay"></div>
+					<a class="form__user--header">
+						Github -> Python
+					</a>
+				</div>
+
+				<div class="form__row--buttons">
+					<input type="hidden" id="myInput">
+					<button class="form__button" onclick="myFunction()" id="btn">
+						Копировать Code
+				</div>
+			</div>
 		</div>
-		<script>
-			function myFunction() {
-				var copyText = document.getElementById("myInput");
-			  	copyText.select();
-			  	document.execCommand("copy");
-        			window.close();
-			}
-        		onload=function() {
-        			var url = location.href;    
-        			document.getElementById("myInput").value=url.slice(url.indexOf("def"), url.length) ;
-      			};
-		</script>
 	</body>
 </html>
