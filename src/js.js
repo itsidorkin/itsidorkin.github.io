@@ -1,12 +1,9 @@
 function myFunction() {
-
-	var url = new URL(location.href);    
-	var code = url.searchParams.get('code');
 	copy(code)
-	document.querySelector("#btn").innerHTML = "Code скопирован";
-	
-	//close();
+	document.getElementById("btn").innerHTML = "Code скопирован";
+	// close();
 }
+
 function copy(text) {
     var input = document.createElement('textarea');
     input.innerHTML = text;
@@ -16,3 +13,11 @@ function copy(text) {
     document.body.removeChild(input);
     return result;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  	code = new URL(location.href).searchParams.get('code'); 
+	if (code == undefined) {
+		document.getElementById("btn").setAttribute("disabled", "disabled")
+		document.getElementById("btn").innerHTML = "Code отсутствует";
+	}
+})
