@@ -1,2 +1,4 @@
 # [itsidorkin.github.io](https://itsidorkin.github.io)
-test get code
+Это сайт для редиректа. Его можно использовать для получения codе, который в свою очередь нужен чтобы получить access token и refrsh token osu api v2. Сам по себе сайт бесполезен, но красив
+# Где использовать
+![](example.png)
