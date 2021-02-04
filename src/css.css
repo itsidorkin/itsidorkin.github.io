@@ -1,33 +1,31 @@
-button {
-font-family: inherit;
-font-size: inherit;
-}
 @font-face {
 font-family: Torus;
 font-weight: 400;
 src: url(Torus.otf);
 }
 body, html {
-margin: 0;
 font-family: Torus, Tahoma;
 height: 100%;
+margin: 0;
 }
 .form {
-flex: 1 0 auto;
 display: flex;
+flex: 1 0 auto;
 }
 .form, .form__button {
-justify-content: center;
 align-items: center;
-color: #fff;
-border: none;
-text-shadow: 0 1px 3px rgba(0, 0, 0, .75);
-padding: 10px 20px;
 border-radius: 100px;
+border: none;
+color: #fff;
+justify-content: center;
+padding: 10px 20px;
+text-shadow: 0 1px 3px rgba(0, 0, 0, .75);
 }
 .form__button {
-outline: none;
 background-color: #3399cc;
+font-family: inherit;
+font-size: inherit;
+outline: none;
 }
 .form__button:hover {
 background-color: #47B4EB;
@@ -39,15 +37,15 @@ cursor: default;
 }
 .form__dialog {
 background-color: #382E32;
-width: 500px;
 display: flex;
 flex-direction: column;
+width: 500px;
 }
 .form__header--overlay {
-position: absolute;
-height: 100%;
-width: 100%;
 background-color: rgba(0, 0, 0, .75);
+height: 100%;
+position: absolute;
+width: 100%;
 }
 .form__row {
 display: flex;
