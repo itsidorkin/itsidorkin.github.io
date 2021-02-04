@@ -1,6 +1,7 @@
 function myFunction() {
 	copy(code)
 	document.getElementById("btn").innerHTML = "Code скопирован";
+	document.getElementById("btn").setAttribute("disabled", "disabled")
 	// close();
 }
 
