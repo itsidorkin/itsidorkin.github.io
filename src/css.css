@@ -1,1 +1,14 @@
-@font-face { font-family: Torus; font-weight: 400; src: url(Torus.otf); } body, html { font-family: Torus, Tahoma; height: 100%; margin: 0; } .form { display: flex; flex: 1 0 auto; } .form, .form__button { align-items: center; border-radius: 100px; border: none; color: #fff; justify-content: center; padding: 10px 20px; text-shadow: 0 1px 3px rgba(0, 0, 0, .75); } .form__button { background-color: #3399cc; font-family: inherit; font-size: inherit; outline: none; } .form__button:hover { background-color: #47B4EB; cursor: pointer; } .form__button:disabled { background-color: #CCCCCC; cursor: default; } .form__dialog { background-color: #382E32; display: flex; flex-direction: column; width: 500px; } .form__header--overlay { background-color: rgba(0, 0, 0, .75); height: 100%; position: absolute; width: 100%; } .form__row { display: flex; margin: 5px 30px; } .form__row--buttons { display: flex; margin: 5px 30px; margin-top: 25px; margin-bottom: 25px; justify-content: center; } .form__row--header { display: flex; margin: 5px 30px; justify-content: center; align-items: center; margin-left: 0; margin-right: 0; margin-top: 0; background-size: cover; background-position: 50%; height: 200px; position: relative; background-image: url('header.jpg'); } .form__user--header { font-size: 30px; position: relative; } .layout { display: flex; background-color: #1c1819; }
+@font-face { font-family: Torus; font-weight: 400; src: url(Torus.otf); } 
+body, html { font-family: Torus, Tahoma; height: 100%; margin: 0; } 
+.form { display: flex; flex: 1 0 auto; } 
+.form, .form__button { align-items: center; border-radius: 100px; border: none; color: #fff; justify-content: center; padding: 10px 20px; text-shadow: 0 1px 3px rgba(0, 0, 0, .75); } 
+.form__button { background-color: #3399cc; font-family: inherit; font-size: inherit; outline: none; } 
+.form__button:hover { background-color: #47B4EB; cursor: pointer; } 
+.form__button:disabled { background-color: #CCCCCC; cursor: default; } 
+.form__dialog { background-color: #382E32; display: flex; flex-direction: column; width: 500px; } 
+.form__header--overlay { background-color: rgba(0, 0, 0, .75); height: 100%; position: absolute; width: 100%; } 
+.form__row { display: flex; margin: 5px 30px; } 
+.form__row--buttons { display: flex; margin: 5px 30px; margin-top: 25px; margin-bottom: 25px; justify-content: center; } 
+.form__row--header { display: flex; margin: 5px 30px; justify-content: center; align-items: center; margin-left: 0; margin-right: 0; margin-top: 0; background-size: cover; background-position: 50%; height: 200px; position: relative; background-image: url('header.jpg'); } 
+.form__user--header { font-size: 30px; position: relative; } 
+.layout { display: flex; background-color: #1c1819; }
